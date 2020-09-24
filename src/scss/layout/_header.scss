@@ -1,20 +1,73 @@
 .header {
-  background: red;
-}
+  height: 100vh;
+  background-image: url("../images/cover.jpg");
+  background-size: cover;
+  background-position: center center;
 
-.header__hero {
-  background: purple;
-  height: 568px;
-  width: 100%;
-}
-.header__hero--image {
-  width: 100%;
-  height: 568px;
-  object-fit: cover;
-}
+  &__hero {
+    height: 568px;
+    width: 100%;
+    @media all and (min-width: 768px) {
+      height: 768px;
+    }
+    &--menu {
+      position: absolute;
+      top: 0;
+      background-color: #0271bc;
+      width: 44px;
+      height: 44px;
+      display: flex;
+      justify-content: center;
+    }
+    &--container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 384px 15px 0 15px;
+      .header__hero--title {
+        width: 290px;
+        height: 110px;
+        font-family: "Roboto Slab", serif;
+        font-size: 42px;
+        font-weight: bold;
+        color: white;
+        line-height: 1.31;
+        text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        text-transform: uppercase;
+        @media all and (min-width: 768px) {
+          width: 690px;
+          height: 212px;
+          font-size: 80px;
+        }
+        @media all and (min-width: 1200px) {
+          width: 730px;
+          height: 264px;
+          font-size: 100px;
+        }
+      }
 
-.header__hero--container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+      .header__hero--content {
+        height: 32px;
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: normal;
+        color: white;
+        text-align: center;
+        @media all and (min-width: 768px) {
+          font-size: 24px;
+        }
+      }
+      .header__hero--scroll-button {
+        width: 45px;
+        height: 45px;
+        border-radius: 22.5px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
 }
