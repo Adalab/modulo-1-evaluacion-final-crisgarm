@@ -1,22 +1,64 @@
 .reasons {
-  background: cyan;
+  background-color: #eff9ff;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 5;
   justify-items: center;
   align-items: center;
-}
-
-@media all and (min-width: 768px) {
-  .reasons {
+  padding: 30px 15px 60px 15px;
+  @media all and (min-width: 768px) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
-  .reasons__title {
-    grid-column: 1/4;
+
+  &__title {
+    font-family: "Roboto Slab", serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.25;
+    text-transform: capitalize;
+    padding-bottom: 45px;
+    @media all and (min-width: 768px) {
+      grid-column: 1/4;
+    }
   }
-  .reasons__button {
-    grid-column: 1/4;
+
+  &__article {
+    text-align: center;
+    padding: 0 70px 45px 70px;
+
+    &--title {
+      height: 30px;
+      font-family: "Roboto Slab", serif;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 1.67;
+      color: black;
+    }
+
+    &--content {
+      height: 63px;
+      font-family: "Roboto", sans-serif;
+      font-size: 18px;
+      font-weight: normal;
+      line-height: 1.67;
+      color: black;
+    }
+  }
+  &__button {
+    width: 184px;
+    height: 45px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    border: solid 2px;
+    background-color: #f26002;
+    border-radius: 22.5px;
+    text-transform: capitalize;
+    @media all and (min-width: 768px) {
+      grid-column: 1/4;
+    }
   }
 }
