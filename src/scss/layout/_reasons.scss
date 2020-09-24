@@ -1,0 +1,22 @@
+.reasons {
+  background: cyan;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5;
+  justify-items: center;
+  align-items: center;
+}
+
+@media all and (min-width: 768px) {
+  .reasons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .reasons__title {
+    grid-column: 1/4;
+  }
+  .reasons__button {
+    grid-column: 1/4;
+  }
+}

@@ -1,5 +1,20 @@
-.page__header {
+.header {
+  background: red;
+}
+
+.header__hero {
+  background: purple;
+  height: 568px;
+  width: 100%;
+}
+.header__hero--image {
+  width: 100%;
+  height: 568px;
+  object-fit: cover;
+}
+
+.header__hero--container {
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+  flex-direction: column;
+  align-items: center;
 }
