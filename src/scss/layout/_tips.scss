@@ -1,40 +1,57 @@
 .tips {
   padding: 30px 15px 45px 15px;
-}
+  @media all and (min-width: 768px) {
+    padding: 30px 39px 60px 39px;
+  }
 
-.tips__small {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 2.14;
-  color: #8ccbea;
-  text-transform: capitalize;
-}
-.tips__title {
-  font-family: "Roboto Slab", serif;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 1.25;
-  color: #000;
-  text-transform: capitalize;
-}
+  &__small {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 2.14;
+    color: #8ccbea;
+    text-transform: capitalize;
+  }
 
-.tips__content {
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  font-weight: normal;
-  line-height: 1.67;
-  color: #4a4a4a;
-  padding: 15px 0 30px 0;
-}
-.tips__button {
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  color: #f26002;
-  background-color: white;
-  width: 76px;
-  height: 45px;
-  border-radius: 22.5px;
-  border: solid 2px #f26002;
+  &__title {
+    font-family: "Roboto Slab", serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.25;
+    color: #000;
+    text-transform: capitalize;
+    @media all and (min-width: 768px) {
+      font-size: 26px;
+      line-height: 1.73;
+    }
+  }
+
+  &__content {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.67;
+    color: #4a4a4a;
+    padding: 15px 0 30px 0;
+    @media all and (min-width: 768px) {
+      font-size: 20px;
+      line-height: 1.5;
+      padding: 30px 0;
+    }
+  }
+
+  &__button {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #f26002;
+    background-color: white;
+    width: 76px;
+    height: 45px;
+    border-radius: 22.5px;
+    border: solid 2px #f26002;
+    @media all and (min-width: 768px) {
+      width: 91px;
+    }
+  }
 }
