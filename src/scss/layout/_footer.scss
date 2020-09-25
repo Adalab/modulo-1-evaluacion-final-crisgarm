@@ -1,5 +1,56 @@
 .footer {
-  background: olive;
+  background-color: #304268;
   display: flex;
   flex-direction: column;
+  height: 465px;
+}
+
+.footer__button {
+  width: 45px;
+  height: 45px;
+  box-shadow: 0 2px 4px 0;
+  background-color: white;
+  border-radius: 22.5px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  transform: translate(0, -22px);
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 37px;
+}
+
+.footer__menu {
+  padding-bottom: 30px;
+}
+
+.footer__menu--list {
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.88;
+  text-align: center;
+}
+
+.footer__menu--link {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer__container--small {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 2.14;
+  color: white;
+  text-align: center;
+}
+.footer__container--small-span {
+  color: #f26002;
 }
