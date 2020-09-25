@@ -50,11 +50,17 @@
     height: 45px;
     border-radius: 22.5px;
     border: solid 2px $color-button;
+    transition: background-color ease 0.5s;
+    transition: color ease 0.3s;
     @media all and (min-width: 768px) {
       width: 91px;
     }
     @media all and (min-width: 1200px) {
       width: 160px;
+    }
+    &:hover {
+      color: $color-primary;
+      background-color: $color-button;
     }
   }
 }

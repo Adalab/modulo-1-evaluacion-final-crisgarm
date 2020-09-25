@@ -81,6 +81,7 @@
     border: solid 2px $color-button;
     background-color: $color-button;
     border-radius: 22.5px;
+    transition: ease 0.5s;
     @media all and (min-width: 768px) {
       grid-column: 1/4;
       width: 210px;
@@ -88,6 +89,11 @@
     @media all and (min-width: 1200px) {
       width: 255px;
       text-transform: capitalize;
+    }
+    &:hover {
+      height: 55px;
+      background-color: $color-primary;
+      color: $color-button;
     }
   }
 }
