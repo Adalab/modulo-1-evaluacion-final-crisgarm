@@ -17,10 +17,14 @@
   display: flex;
   justify-content: center;
   align-self: center;
+  align-items: center;
   transform: translate(0, -22px);
   @media all and (min-width: 768px) {
     position: absolute;
   }
+}
+.footer__button--link {
+  padding: 13px;
 }
 
 .footer__container {
