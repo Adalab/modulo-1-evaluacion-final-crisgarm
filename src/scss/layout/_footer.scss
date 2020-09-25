@@ -10,7 +10,7 @@
     width: 45px;
     height: 45px;
     box-shadow: 0 2px 4px 0;
-    background-color: white;
+    background-color: $color-primary;
     border-radius: 22.5px;
     display: flex;
     justify-content: center;
@@ -57,7 +57,7 @@
     }
     .footer__menu--list {
       list-style: none;
-      font-family: "Roboto", sans-serif;
+      font-family: $font-text;
       font-size: 16px;
       font-weight: normal;
       line-height: 1.88;
@@ -66,9 +66,10 @@
         text-align: left;
       }
       .footer__menu--link {
-        color: white;
+        color: $color-primary;
         text-decoration: none;
         text-transform: uppercase;
+        padding: 10px;
       }
     }
     .footer__container--small {
@@ -82,18 +83,18 @@
         padding-right: 30px;
       }
       .footer__container--small-copy {
-        font-family: "Roboto", sans-serif;
+        font-family: $font-text;
         font-size: 14px;
         font-weight: normal;
         line-height: 2.14;
-        color: white;
+        color: $color-primary;
         text-align: center;
         @media all and (min-width: 768px) {
           text-align: left;
         }
       }
       .footer__container--small-span {
-        color: #f26002;
+        color: $color-button;
       }
     }
   }

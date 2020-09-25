@@ -19,10 +19,11 @@
     padding: 60px 83px;
   }
   &__title {
-    font-family: "Roboto Slab", serif;
+    font-family: $font-title;
     font-size: 24px;
     font-weight: bold;
     line-height: 1.25;
+    color: $color-secondary;
     text-transform: capitalize;
     padding-bottom: 45px;
     @media all and (min-width: 768px) {
@@ -44,11 +45,11 @@
     }
 
     &--title {
-      font-family: "Roboto Slab", serif;
+      font-family: $font-title;
       font-size: 18px;
       font-weight: bold;
       line-height: 1.67;
-      color: black;
+      color: $color-secondary;
       @media all and (min-width: 768px) {
         font-size: 24px;
         line-height: 1.25;
@@ -57,11 +58,11 @@
 
     &--content {
       height: 63px;
-      font-family: "Roboto", sans-serif;
+      font-family: $font-text;
       font-size: 18px;
       font-weight: normal;
       line-height: 1.67;
-      color: black;
+      color: $color-secondary;
       @media all and (min-width: 768px) {
         height: 68px;
         font-size: 20px;
@@ -73,20 +74,20 @@
   &__button {
     width: 184px;
     height: 45px;
-    font-family: "Roboto", sans-serif;
+    font-family: $font-text;
     font-size: 20px;
     font-weight: 500;
-    color: white;
-    border: solid 2px;
-    background-color: #f26002;
+    color: $color-primary;
+    border: solid 2px $color-button;
+    background-color: $color-button;
     border-radius: 22.5px;
-    text-transform: capitalize;
     @media all and (min-width: 768px) {
       grid-column: 1/4;
       width: 210px;
     }
     @media all and (min-width: 1200px) {
       width: 255px;
+      text-transform: capitalize;
     }
   }
 }
