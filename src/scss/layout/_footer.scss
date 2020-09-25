@@ -1,5 +1,6 @@
 .footer {
   background-color: #304268;
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 465px;
@@ -16,9 +17,21 @@
     justify-content: center;
     align-self: center;
     align-items: center;
-    transform: translate(0, -22px);
-    @media all and (min-width: 768px) {
-      position: absolute;
+    position: absolute;
+    top: -20px;
+    &:hover {
+      animation: button 2s ease;
+    }
+    @keyframes button {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.5);
+      }
+      100% {
+        transform: scale(1);
+      }
     }
     &--link {
       padding: 13px;
@@ -28,7 +41,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 37px;
+    padding-top: 60px;
     @media all and (min-width: 768px) {
       flex-direction: row-reverse;
       justify-content: space-between;
