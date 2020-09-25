@@ -6,103 +6,95 @@
   @media all and (min-width: 768px) {
     height: 240px;
   }
-}
-
-.footer__button {
-  width: 45px;
-  height: 45px;
-  box-shadow: 0 2px 4px 0;
-  background-color: white;
-  border-radius: 22.5px;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  align-items: center;
-  transform: translate(0, -22px);
-  @media all and (min-width: 768px) {
-    position: absolute;
+  &__button {
+    width: 45px;
+    height: 45px;
+    box-shadow: 0 2px 4px 0;
+    background-color: white;
+    border-radius: 22.5px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    transform: translate(0, -22px);
+    @media all and (min-width: 768px) {
+      position: absolute;
+    }
+    &--link {
+      padding: 13px;
+    }
   }
-}
-.footer__button--link {
-  padding: 13px;
-}
-
-.footer__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 37px;
-  @media all and (min-width: 768px) {
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 45px 39px 0 39px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 37px;
+    @media all and (min-width: 768px) {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 45px 39px 0 39px;
+    }
+    @media all and (min-width: 1200px) {
+      padding: 45px 330px 0 330px;
+    }
+    .footer__menu1,
+    .footer__menu2 {
+      padding-bottom: 30px;
+      @media all and (min-width: 768px) {
+        padding-bottom: 45px;
+        width: 210px;
+      }
+      @media all and (min-width: 1200px) {
+        width: 160px;
+        padding-right: 30px;
+      }
+    }
+    .footer__menu2 {
+      @media all and (min-width: 768px) {
+        order: -3;
+      }
+    }
+    .footer__menu--list {
+      list-style: none;
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 1.88;
+      text-align: center;
+      @media all and (min-width: 768px) {
+        text-align: left;
+      }
+      .footer__menu--link {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+    .footer__container--small {
+      display: flex;
+      flex-direction: column;
+      @media all and (min-width: 768px) {
+        width: 210px;
+      }
+      @media all and (min-width: 1200px) {
+        width: 160px;
+        padding-right: 30px;
+      }
+      .footer__container--small-copy {
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 2.14;
+        color: white;
+        text-align: center;
+        @media all and (min-width: 768px) {
+          text-align: left;
+        }
+      }
+      .footer__container--small-span {
+        color: #f26002;
+      }
+    }
   }
-  @media all and (min-width: 1200px) {
-    padding: 45px 330px 0 330px;
-  }
-}
-
-.footer__menu1,
-.footer__menu2 {
-  padding-bottom: 30px;
-  @media all and (min-width: 768px) {
-    padding-bottom: 45px;
-    width: 210px;
-  }
-  @media all and (min-width: 1200px) {
-    width: 160px;
-    padding-right: 30px;
-  }
-}
-
-.footer__menu2 {
-  @media all and (min-width: 768px) {
-    order: -3;
-  }
-}
-
-.footer__menu--list {
-  list-style: none;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 1.88;
-  text-align: center;
-  @media all and (min-width: 768px) {
-    text-align: left;
-  }
-}
-
-.footer__menu--link {
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.footer__container--small {
-  display: flex;
-  flex-direction: column;
-  @media all and (min-width: 768px) {
-    width: 210px;
-  }
-  @media all and (min-width: 1200px) {
-    width: 160px;
-    padding-right: 30px;
-  }
-}
-
-.footer__container--small-copy {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 2.14;
-  color: white;
-  text-align: center;
-  @media all and (min-width: 768px) {
-    text-align: left;
-  }
-}
-.footer__container--small-span {
-  color: #f26002;
 }
