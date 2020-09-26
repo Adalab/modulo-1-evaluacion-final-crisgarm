@@ -81,6 +81,7 @@
     border: solid 2px $color-button;
     background-color: $color-button;
     border-radius: 22.5px;
+    cursor: pointer;
     transition: ease 0.5s;
     @media all and (min-width: 768px) {
       grid-column: 1/4;
@@ -94,6 +95,11 @@
       height: 55px;
       background-color: $color-primary;
       color: $color-button;
+    }
+    &:focus {
+      background-color: #8ccbea;
+      color: $color-primary;
+      border-color: #8ccbea;
     }
   }
 }

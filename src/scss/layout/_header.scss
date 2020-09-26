@@ -19,6 +19,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      .header__hero--menu-link {
+        padding: 13px;
+      }
     }
     &--container {
       display: flex;
