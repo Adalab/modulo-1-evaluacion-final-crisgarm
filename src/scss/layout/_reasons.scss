@@ -82,7 +82,7 @@
     background-color: $color-button;
     border-radius: 22.5px;
     cursor: pointer;
-    transition: ease 0.5s;
+    transition: ease 0.3s;
     @media all and (min-width: 768px) {
       grid-column: 1/4;
       width: 210px;
@@ -96,10 +96,13 @@
       background-color: $color-primary;
       color: $color-button;
     }
-    &:focus {
+    &:active {
       background-color: #8ccbea;
       color: $color-primary;
       border-color: #8ccbea;
+    }
+    &:focus {
+      box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.5);
     }
   }
 }
