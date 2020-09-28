@@ -1,0 +1,21 @@
+.section__offer {
+  background-color: #f26002;
+  width: 100%;
+  padding: 0 80px;
+}
+.section__offer-title1 {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.section__offer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media all and (max-width: 768px) {
+  .section__offer {
+    display: none;
+  }
+}
